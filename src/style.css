@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #0f766e;
+  --color-brand-dark: #134e4a;
+  --color-gold: #b8913a;
+  --font-sans: "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --font-dhikr: "Amiri", serif;
+}
+
+html { scroll-behavior: smooth; }
+.dhikr { font-family: var(--font-dhikr); line-height: 2.1; }
+.hero-bg { background: linear-gradient(160deg, #134e4a 0%, #0f766e 60%, #115e59 100%); position: relative; overflow: hidden; }
+.hero-bg::before { content: ""; position: absolute; inset: 0; opacity: .08;
+  background-image: radial-gradient(circle at 1px 1px, #fff 1px, transparent 0); background-size: 22px 22px; }
+.done { opacity: .45; }
+.done .count-pill { background: #0f766e; color: #fff; }
